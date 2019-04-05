@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "CONNECTION_STRING_STORAGE_AZURE",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "KEY_APPLICATION_INSIGHTS",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "API:ViaCEP": "https://viacep.com.br/ws/"
+  }
+}
