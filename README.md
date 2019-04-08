@@ -18,7 +18,7 @@ Passos para execução do projeto:
 2. Criar pasta para o projeto no local desejado;
 
 3. Executar os seguintes comandos;
-  > *dotnet new -i [Path]*    
+  > *dotnet new -i Wiz.Dotnet.Template.Function*    
     *dotnet new wizfunction -n [NomeProjeto]*
 
 4. Incluir configurações de *varíaveis de ambiente* no caminho abaixo:
