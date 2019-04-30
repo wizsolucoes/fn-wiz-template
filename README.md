@@ -102,6 +102,7 @@ Terminal -> Run Task
 
 Padrão das camadas do projeto:
 
+1. **Wiz.[NomeProjeto].CrossCutting**: camada responsável por *ligar os pontos* entre a Infra a as outras camadas superiores, ela é responsável por registrar as Interfaces com a classe concrete sem contaminar a camada da *Wiz.[NomeProjeto].Function*;
 1. **Wiz.[NomeProjeto].Domain**: domínio da aplicação, responsável de manter as *regras de negócio* para as function(s);
 2. **Wiz.[NomeProjeto].Infra**: camada mais baixa, para acesso a dados, infraestrutura e serviços externos;
 3. **Wiz.[NomeProjeto].Function**: responsável pela camada de *disponibilização* das function(s);
@@ -111,6 +112,7 @@ Formatação do projeto dentro do repositório:
 
 ```
 ├── src
+  ├── Wiz.[NomeProjeto].CrossCutting (projeto)
   ├── Wiz.[NomeProjeto].Domain (projeto)
   ├── Wiz.[NomeProjeto].Infra (projeto)
   ├── Wiz.[NomeProjeto].Function (projeto)
