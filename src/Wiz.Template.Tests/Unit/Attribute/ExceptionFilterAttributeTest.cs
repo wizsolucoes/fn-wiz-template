@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Runtime.ExceptionServices;
 using System.Threading;
 using System.Threading.Tasks;
-using Wiz.Template.Domain.Attribute;
+using Wiz.Template.Function.Attribute;
 using Xunit;
 
 namespace Wiz.Template.Tests.Unit.Attribute

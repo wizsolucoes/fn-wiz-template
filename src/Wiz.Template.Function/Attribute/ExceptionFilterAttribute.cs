@@ -2,12 +2,12 @@
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Diagnostics;
-using System.Net;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Wiz.Template.Domain.Attribute
+namespace Wiz.Template.Function.Attribute
 {
     public class ExceptionFilterAttribute : FunctionExceptionFilterAttribute
     {
