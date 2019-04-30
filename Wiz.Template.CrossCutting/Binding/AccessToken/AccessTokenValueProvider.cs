@@ -14,10 +14,10 @@ using System.Threading.Tasks;
 namespace Wiz.Template.CrossCutting.Binding.AccessToken
 {
     /// <summary>
-    /// Creates a <see cref="ClaimsPrincipal"/> instance for the supplied header and configuration values.
+    /// Cria uma instância do tipo <see cref="ClaimsPrincipal"/> para o cabeçalho fornecido através do campo Authorization e valores de configuração.
     /// </summary>
     /// <remarks>
-    /// This is where the actual authentication happens - replace this code to implement a different authentication solution.
+    /// É aqui que a autenticação real acontece - substitua esse código para implementar uma solução de autenticação diferente.
     /// </remarks>
     public class AccessTokenValueProvider : IValueProvider
     {

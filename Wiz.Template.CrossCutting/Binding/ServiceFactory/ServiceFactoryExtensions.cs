@@ -9,7 +9,7 @@ using Wiz.Template.Infra.Services;
 namespace Wiz.Template.CrossCutting.Binding.ServiceFactory
 {
     /// <summary>
-    /// Called from Startup to load the custom binding when the Azure Functions host starts up.
+    /// Uma chamada para carregar o mapeamento das interfaces e suas classes concretas quando o host do Azure Functions é inicializado.
     /// </summary>
     public static class ServiceFactoryExtensions
     {

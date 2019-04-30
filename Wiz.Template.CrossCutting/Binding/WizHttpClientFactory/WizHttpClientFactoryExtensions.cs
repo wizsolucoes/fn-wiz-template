@@ -11,7 +11,7 @@ using System.Text;
 namespace Wiz.Template.CrossCutting.Binding.WizHttpClientFactory
 {
     /// <summary>
-    /// Called from Startup to load the custom binding when the Azure Functions host starts up.
+    /// Uma chamada para carregar o as regras do HttpClient já com políticas predefinidas a partir do momento em que o host do Azure Functions é inicializado.
     /// </summary>
     public static class WizHttpClientFactoryExtensions
     {

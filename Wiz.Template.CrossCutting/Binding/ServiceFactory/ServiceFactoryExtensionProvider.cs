@@ -7,7 +7,7 @@ using System.Text;
 namespace Wiz.Template.CrossCutting.Binding.ServiceFactory
 {
     /// <summary>
-    /// Wires up the attribute to the custom binding.
+    /// Cria um atributo para fazer a injeção de dependência.
     /// </summary>
     [Extension("ServiceFactory")]
     public class ServiceFactoryExtensionProvider : IExtensionConfigProvider

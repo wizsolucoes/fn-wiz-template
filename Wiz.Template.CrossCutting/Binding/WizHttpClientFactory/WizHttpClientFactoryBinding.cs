@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Wiz.Template.CrossCutting.Binding.WizHttpClientFactory
 {
     /// <summary>
-    /// Runs on every request and passes the function context (e.g. Http request and host configuration) to a value provider.
+    /// É executado em todas as solicitações e passa o contexto da function (por exemplo, solicitação HTTP e configuração do host) para um provedor de valor <see cref="WizHttpClientFactoryValueProvider"
     /// </summary>
     public class WizHttpClientFactoryBinding : IBinding
     {

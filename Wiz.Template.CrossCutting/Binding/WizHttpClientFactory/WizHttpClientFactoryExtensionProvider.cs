@@ -8,7 +8,7 @@ using System.Text;
 namespace Wiz.Template.CrossCutting.Binding.WizHttpClientFactory
 {
     /// <summary>
-    /// Wires up the attribute to the custom binding.
+    /// Cria um atributo para fazer a injeção de dependência.
     /// </summary>
     [Extension("HttpClientFactory")]
     public class WizHttpClientFactoryExtensionProvider : IExtensionConfigProvider

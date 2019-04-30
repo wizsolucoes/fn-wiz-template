@@ -6,7 +6,7 @@ using System.Text;
 namespace Wiz.Template.CrossCutting.Binding.WizHttpClientFactory
 {
     /// <summary>
-    /// A custom attribute that lets you pass a <see cref="ClaimsPrincipal"/> into an function definition.
+    /// Atributo customizado para poder acessar uma instancia do HttpClient já configurado com as regras de resiliência definidas pelo Chapter Devz de acordo com as regras criadas dentro da classe <see cref="WizHttpClientFactoryExtensions"/> injetando na definição da function.
     /// </summary>
     [AttributeUsage(AttributeTargets.Parameter | AttributeTargets.ReturnValue)]
     [Binding]

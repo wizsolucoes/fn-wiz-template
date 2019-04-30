@@ -6,7 +6,7 @@ using System.Text;
 namespace Wiz.Template.CrossCutting.Binding.ServiceFactory
 {
     /// <summary>
-    /// A custom attribute that lets you pass a <see cref="ClaimsPrincipal"/> into an function definition.
+    /// Atributo customizado para poder acessar um serviço injetado pela classe <see cref="ServiceFactoryExtensions"/> dentro da definição da function.
     /// </summary>
     [AttributeUsage(AttributeTargets.Parameter | AttributeTargets.ReturnValue)]
     [Binding]

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Wiz.Template.CrossCutting.Binding.AccessToken
 {
     /// <summary>
-    /// Provides a new binding instance for the function host.
+    /// Fornece uma nova instância de ligação para a function em execução.
     /// </summary>
     public class AccessTokenBindingProvider : IBindingProvider
     {

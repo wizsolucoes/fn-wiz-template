@@ -6,7 +6,7 @@ using System.Text;
 namespace Wiz.Template.CrossCutting.Binding.AccessToken
 {
     /// <summary>
-    /// Called from Startup to load the custom binding when the Azure Functions host starts up.
+    /// Uma chamada para carregar a Bind <see cref="AccessTokenBinding"/> personalizada quando o host do Azure Functions é inicializado.
     /// </summary>
     public static class AccessTokenExtensions
     {

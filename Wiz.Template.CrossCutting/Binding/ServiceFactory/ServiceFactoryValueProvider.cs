@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 namespace Wiz.Template.CrossCutting.Binding.ServiceFactory
 {
     /// <summary>
-    /// Creates a <see cref="ClaimsPrincipal"/> instance for the supplied header and configuration values.
+    /// Cria uma instancia do serviço injetado pelo atributo <see cref="ServiceFactoryAttribute"/>.
     /// </summary>
     /// <remarks>
-    /// This is where the actual authentication happens - replace this code to implement a different authentication solution.
     /// </remarks>
     public class ServiceFactoryValueProvider : IValueProvider
     {

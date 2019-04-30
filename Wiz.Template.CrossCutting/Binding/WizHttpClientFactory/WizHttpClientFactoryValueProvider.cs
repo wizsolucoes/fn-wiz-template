@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 namespace Wiz.Template.CrossCutting.Binding.WizHttpClientFactory
 {
     /// <summary>
-    /// Creates a <see cref="ClaimsPrincipal"/> instance for the supplied header and configuration values.
+    /// Cria instancia da classe <see cref="HttpClient"/> de acordo com as políticas pré-definidas pela classe <see cref="WizHttpClientOptions"/>.
     /// </summary>
     /// <remarks>
-    /// This is where the actual authentication happens - replace this code to implement a different authentication solution.
+    /// Essa é parte fundamental em que uma HttpClient é criada e atribuída a algumas políticas, inclusive se já existe um access_token no context ele é propagado para outros serviços internos, seguindo assim nossa governança.
     /// </remarks>
     public class WizHttpClientFactoryValueProvider : IValueProvider
     {
