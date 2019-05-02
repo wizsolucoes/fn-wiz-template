@@ -102,9 +102,9 @@ Terminal -> Run Task
 
 Padrão das camadas do projeto:
 
-1. **Wiz.[NomeProjeto].CrossCutting**: camada responsável por *ligar os pontos* entre a Infra a as outras camadas superiores, ela é responsável por registrar as Interfaces com a classe concrete sem contaminar a camada da *Wiz.[NomeProjeto].Function*;
+1. **Wiz.[NomeProjeto].CrossCutting**: camada responsável por conter código que podem ser utilizados de forma transversal (mais de uma camada), não podendo ser isolados em um componente específico sem relação direta com todos os outros. Exemplos de funcionalidades dessa camada: Inversion Of Control (IoC), logging do sistema, segurança entre outros comum a todas camadas;
 1. **Wiz.[NomeProjeto].Domain**: domínio da aplicação, responsável de manter as *regras de negócio* para as function(s);
-2. **Wiz.[NomeProjeto].Infra**: camada mais baixa, para acesso a dados, infraestrutura e serviços externos;
+2. **Wiz.[NomeProjeto].Infra**: responsável por fornecer capacidade técnicas para suportar as camadas superiores, como por exemplo envio de mensagens para outras aplicações, persistência dos dados da camada de domínio;
 3. **Wiz.[NomeProjeto].Function**: responsável pela camada de *disponibilização* das function(s);
 4. **Wiz.[NomeProjeto].Tests**: responsável pela camada de *testes unitários e de integração* dos projetos.
 
