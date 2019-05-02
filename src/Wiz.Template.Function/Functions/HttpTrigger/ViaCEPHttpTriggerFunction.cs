@@ -34,8 +34,9 @@ namespace Wiz.Template.Function.Functions.HttpTrigger
 
             if (user?.Identity.IsAuthenticated == true)
             {
+                string urlTeste = Environment.GetEnvironmentVariable("API:UrlTeste", EnvironmentVariableTarget.Process);
                 //Chama um serviço interno passando o AccessToken para esse serviço interno
-                HttpResponseMessage msg = await httpClientCross.GetAsync("https://domain-de-servico-autenticado");
+                HttpResponseMessage msg = await httpClientCross.GetAsync(urlTeste);
 
 
                 return name != null

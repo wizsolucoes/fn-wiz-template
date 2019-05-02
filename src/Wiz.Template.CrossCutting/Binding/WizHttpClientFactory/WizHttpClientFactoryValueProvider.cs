@@ -19,11 +19,12 @@ namespace Wiz.Template.CrossCutting.Binding.WizHttpClientFactory
     {
         private readonly IHttpClientFactory _httpClientFactory;
 
-        private const string AUTH_HEADER_NAME = "Authorization";
+        private static readonly string _projectName = Environment.GetEnvironmentVariable("wiz:project:name", EnvironmentVariableTarget.Process);
+
+
         private const string BEARER_PREFIX = "Bearer ";
         private HttpRequest _request;
         private WizHttpClientOptions _option;
-        private object httpContext;
 
         public WizHttpClientFactoryValueProvider(WizHttpClientOptions option, HttpRequest request, IHttpClientFactory httpClientFactory)
         {
@@ -45,7 +46,7 @@ namespace Wiz.Template.CrossCutting.Binding.WizHttpClientFactory
                     //client.BaseAddress = new Uri(Environment.GetEnvironmentVariable("wiz:cross:gateway:url"));
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                     client.DefaultRequestHeaders.AcceptEncoding.Add(new System.Net.Http.Headers.StringWithQualityHeaderValue("gzip"));
-                    client.DefaultRequestHeaders.UserAgent.ParseAdd($"concierge_{_request.Headers["User-Agent"].ToString()}");
+                    client.DefaultRequestHeaders.UserAgent.ParseAdd($"{_projectName}_{_request.Headers["User-Agent"].ToString()}");
 
                     string token = _request.Headers["Authorization"].ToString().Substring(BEARER_PREFIX.Length);
 
@@ -58,7 +59,7 @@ namespace Wiz.Template.CrossCutting.Binding.WizHttpClientFactory
                 case WizHttpClientOptions.Outro:
                     client = _httpClientFactory.CreateClient("Outro");
 
-                    client.DefaultRequestHeaders.UserAgent.ParseAdd($"concierge_{_request.Headers["User-Agent"].ToString()}");
+                    client.DefaultRequestHeaders.UserAgent.ParseAdd($"{_projectName}_{_request.Headers["User-Agent"].ToString()}");
 
                     break;
             }

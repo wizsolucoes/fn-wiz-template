@@ -5,6 +5,8 @@
     "APPINSIGHTS_INSTRUMENTATIONKEY": "KEY_APPLICATION_INSIGHTS",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
     "API:ViaCEP": "https://viacep.com.br/ws/",
+    "API:UrlTeste": "https://viacep.com.br/ws/",
+    "wiz:project:name": "template",
     "wiz:sso:issuer": "https://para-alterar.azurewebsites.net",
     "wiz:sso:audience": "https://para-alterar.azurewebsites.net/resources"
   }

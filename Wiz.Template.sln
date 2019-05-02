@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wiz.Template.Domain", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wiz.Template.Infra", "src\Wiz.Template.Infra\Wiz.Template.Infra.csproj", "{3CA39012-EF4C-4D31-B960-A33260416673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wiz.Template.CrossCutting", "Wiz.Template.CrossCutting\Wiz.Template.CrossCutting.csproj", "{E1ED9F7E-C771-4E57-8B24-0CB9250DAF7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wiz.Template.CrossCutting", "src\Wiz.Template.CrossCutting\Wiz.Template.CrossCutting.csproj", "{E1ED9F7E-C771-4E57-8B24-0CB9250DAF7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
