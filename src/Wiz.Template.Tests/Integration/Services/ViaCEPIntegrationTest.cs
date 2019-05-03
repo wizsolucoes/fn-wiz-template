@@ -19,7 +19,7 @@ namespace Wiz.Template.Tests.Integration.Services
         public async Task GetByCEPAsync_ReturnViaCEPModelTestAsync()
         {
             var cep = "68901111";
-            var viaCEPservice = await ViaCEPService.GetByCEPAsync(cep);
+            var viaCEPservice = await new ViaCEPService().GetByCEPAsync(cep);
 
             var serviceResult = Assert.IsType<ViaCEP>(viaCEPservice);
 
