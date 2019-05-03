@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Wiz.Dotnet.Template.Function</id>
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
     <description>
       Wiz DotNet Core API Template
     </description>
@@ -15,7 +15,7 @@
     <license type="expression">MIT</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
-      First release
+      Archtecture improvements to better work with Azure Function
     </releaseNotes>
     <copyright>Copyright 2019-2019</copyright>
     <tags>csharp dotnet aspnet core template azure function http rest api xunit test</tags>
