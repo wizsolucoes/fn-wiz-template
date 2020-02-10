@@ -1,5 +1,7 @@
 # Wiz - Azure Function
 
+![](https://github.com/wizsolucoes/fn-wiz-template/workflows/.NET%20Core/badge.svg)
+
 - [Desenvolvimento, por onde começar](#desenvolvimento-por-onde-começar)
 - [Execução do projeto](#execução-do-projeto)
 - [Estrutura](#estrutura)
