@@ -128,7 +128,7 @@ Formatação do projeto dentro do repositório:
 
 ## Build e testes
 
-* Obrigatoriedade de **80%** de teste de cobertura.
+* Obrigatoriedade de **não diminuir** os testes de cobertura.
 
 ### **Visual Studio**
 
@@ -149,6 +149,18 @@ As funcionalidades **Live Unit Testing** e **Code Coverage** estão disponíveis
   + *test with coverage* - Executar projeto de testes com cobertura
 
 2. Ativar **Watch** na parte inferior do Visual Studio Code para habilitar cores nas classes que descrevem a cobertura. É necessário executar os testes no modo *test with coverage*.
+
+### **Sonar**
+
+1. Dentro do arquivo dos projetos **(.csproj)** no campo **PropertyGroup**, é necessário adicionar um GUID no formato abaixo:
+
+```
+<PropertyGroup>
+  <ProjectGuid>{b5c970c2-a7cc-4052-b07b-b599b83fc621}</ProjectGuid>
+</PropertyGroup>
+```
+
+2. O GUID pode ser coletado no arquivo da solution ou criado pelo site: https://www.guidgenerator.com/.
 
 ## NuGet privado
 
