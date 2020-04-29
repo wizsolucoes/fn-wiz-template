@@ -24,4 +24,7 @@
     <Folder Include="Functions\BlobTrigger\" />
     <Folder Include="Functions\ServiceBusTrigger\" />
   </ItemGroup>
+  <Target Name="InstallNpm" BeforeTargets="_GenerateRestoreProjectSpec">
+    <Exec Command="npm install" ConsoleToMsBuild="true" />
+  </Target>
 </Project>
