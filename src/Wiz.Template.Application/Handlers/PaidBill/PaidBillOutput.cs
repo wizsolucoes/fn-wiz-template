@@ -2,5 +2,6 @@
 {
     public class PaidBillOutput
     {
+        public bool Paid { get; set; }
     }
 }

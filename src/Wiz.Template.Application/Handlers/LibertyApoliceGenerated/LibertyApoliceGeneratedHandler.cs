@@ -1,21 +1,25 @@
 ﻿using Microsoft.Extensions.Logging;
+using Wiz.Template.Application.Services;
 using Wizco.Common.Application;
 
 namespace Wiz.Template.Application.Handlers.LibertyApoliceGenerated;
 
 public class LibertyApoliceGeneratedHandler : HandlerBase<LibertyApoliceGeneratedInput, LibertyApoliceGeneratedOutput>
 {
-    public LibertyApoliceGeneratedHandler(ILogger<HandlerBase<LibertyApoliceGeneratedInput, LibertyApoliceGeneratedOutput>> logger) : base(logger)
+    private ILibertyService libertyService;
+
+    public LibertyApoliceGeneratedHandler(ILogger<HandlerBase<LibertyApoliceGeneratedInput, LibertyApoliceGeneratedOutput>> logger, ILibertyService libertyServices) : base(logger)
     {
+        this.libertyService = libertyServices;
     }
 
-    protected override Task HandleAsync()
+    protected override async Task HandleAsync()
     {
-        throw new NotImplementedException();
+        this.Response.Data = await libertyService.GenerateApoliceAsync(this.Input);
     }
 
-    protected override Task ValidateAsync()
+    protected override async Task ValidateAsync()
     {
-        throw new NotImplementedException();
+        await Task.CompletedTask;
     }
 }

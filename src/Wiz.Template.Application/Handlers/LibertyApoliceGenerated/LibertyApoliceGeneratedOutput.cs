@@ -1,6 +1,6 @@
-﻿namespace Wiz.Template.Application.Handlers.LibertyApoliceGenerated
+﻿namespace Wiz.Template.Application.Handlers.LibertyApoliceGenerated;
+
+public class LibertyApoliceGeneratedOutput
 {
-    public class LibertyApoliceGeneratedOutput
-    {
-    }
+    public string Content { get; set; }
 }

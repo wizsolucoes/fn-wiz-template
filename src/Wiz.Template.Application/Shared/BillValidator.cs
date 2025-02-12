@@ -5,7 +5,7 @@ namespace Wiz.Template.Application.Shared;
 /// <summary>
 /// Este codigo não foi testado. trata-se de um codigo de demonstração
 /// </summary>
-public static class BoletoValidator
+public static class BillValidator
 {
     public static bool ValidarCodigoBarras(string codigoBarras)
     {

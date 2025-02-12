@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Wiz.Dotnet.Template.Function</id>
-    <version>1.0.1.0</version>
+    <version>8.0.0.0</version>
     <description>
-      Wiz DotNet Core API Template
+      Wiz DotNet Core Function Template
     </description>
-    <authors>Wiz</authors>
-    <owners>Wiz</owners>
+    <authors>Wizco</authors>
+    <owners>Wizco</owners>
     <projectUrl>https://github.com/wizsolucoes/fn-wiz-template</projectUrl>
     <packageTypes>
       <packageType name="Template" />
@@ -17,7 +17,7 @@
     <releaseNotes>
       Archtecture improvements to better work with Azure Function
     </releaseNotes>
-    <copyright>Copyright 2019-2019</copyright>
+    <copyright>Copyright 2024-2025</copyright>
     <tags>csharp dotnet aspnet core template azure function http rest api xunit test</tags>
   </metadata>
   <files>

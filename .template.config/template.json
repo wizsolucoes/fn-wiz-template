@@ -7,7 +7,7 @@
     "Test",
     "xUnit"
   ],
-  "name": "Wiz Template - Azure Function v2 (Core)",
+  "name": "Wiz Template - Azure Function v4",
   "generatorVersions": "[1.0.0.0-*)",
   "identity": "Wiz.Template.Function",
   "groupIdentity": "Wiz.Template.Function.v1",
@@ -25,16 +25,12 @@
       "datatype": "choice",
       "choices": [
         {
-          "choice": "netcoreapp2.1",
-          "description": "Target netcoreapp2.1"
-        },
-        {
-          "choice": "netcoreapp2.2",
-          "description": "Target netcoreapp2.2"
+          "choice": "net8.0",
+          "description": "Target net8.0"
         }
       ],
-      "replaces": "netcoreapp2.2",
-      "defaultValue": "netcoreapp2.2"
+      "replaces": "net8.0",
+      "defaultValue": "net8.0"
     },
     "copyrightYear": {
       "type": "generated",
@@ -49,6 +45,55 @@
       "datatype": "bool",
       "description": "If specified, skips the automatic restore of the project on create.",
       "defaultValue": "false"
+    },	
+    "AppInsightsConnectionString": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "<instrumentation-key-connection-string>",
+      "replaces": "<APPINSIGHTS-CONNECTIONSTRING>",
+      "description": "connection string do WPRO. obtenha esse valor do appInsights do wpro. O valor que for inserido aqui, será substituido no seu appsettings.config"
+    },
+	"AppConfigConnectionString": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "Endpoint=https://<name>-appconfig.azconfig.io;Id=<id>;Secret=<secret>",
+      "replaces": "<APPCONFIG-CONNECTIONSTRING>",
+      "description": "connection string do Azure App Configuration. Obtenha esse valor com o time de techleads. O valor que for inserido aqui, será substituido no seu appsettings.config"
+    },
+	"ServicebusConnectionString": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "Server=<server-name>;Database=<database-name>;User Id=<user-id>;Password=<user-pass>;MultipleActiveResultSets=true;TrustServerCertificate=true",
+      "replaces": "<SERVICEBUS-CONNECTIONSTRING>",
+      "description": "connection string do repositorio. o valor que for inserido aqui, será substituido no seu localsettings.json"
+    },
+    "ServicebusTopic": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "my-topic",
+      "replaces": "<SERVICEBUS-TOPIC>",
+      "description": "connection string do REDIS. o valor que for inserido aqui, será substituido no seu localsettings.json"
+    },
+    "ServicebusSubscription": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "my-service-bus-subscription",
+      "replaces": "<SERVICEBUS-SUBSCRIPTION>",
+      "description": "O valor que for inserido aqui, será substituido no seu localsettings.json"
+    },
+    "LogAnalyticsSharedKey": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "obrigatorio se quiser logar sua function",
+      "replaces": "<LOGANALYTICS-SHAREDKEY>",
+      "description": "O valor que for inserido aqui, será substituido no seu localsettings.json"
+    },
+    "LogAnalyticsWorkspaceId": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "https://sso-dev.wiz.co/resources",
+      "replaces": "<LOGANALYTICS-WORKSPACEID>",
+      "description": "O valor que for inserido aqui, será substituido no seu localsettings.json"
     }
   },
   "primaryOutputs": [

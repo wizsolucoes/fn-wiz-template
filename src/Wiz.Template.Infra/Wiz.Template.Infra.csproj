@@ -6,6 +6,6 @@
 	  <ProjectReference Include="..\Wiz.Template.Application\Wiz.Template.Application.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Clients\" />
+	  <PackageReference Include="Refit" Version="8.0.0" />
 	</ItemGroup>
 </Project>

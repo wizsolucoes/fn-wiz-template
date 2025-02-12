@@ -23,7 +23,7 @@ public class PaidBillHandler : HandlerBase<PaidBillInput, PaidBillOutput>
 
     protected override async Task ValidateAsync()
     {
-        if (BoletoValidator.ValidarCodigoBarras(Input.CodigoBarras))
+        if (BillValidator.ValidarCodigoBarras(Input.CodigoBarras))
         {
             Response.AddError("Codigo de barras invalido para pagmento.");
         }
