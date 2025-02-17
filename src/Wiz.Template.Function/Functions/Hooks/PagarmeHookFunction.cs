@@ -1,6 +1,5 @@
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.IO;
@@ -30,7 +29,7 @@ namespace Wiz.Template.Function.Functions.Hooks
         }
 
         [Function("PagarmeHookFunction")]
-        public async Task<IServiceResponse<PaidBillOutput>> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequest req)
+        public async Task<IServiceResponse<PaidBillOutput>> Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
         {
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             PaidBillInput input = JsonConvert.DeserializeObject<PaidBillInput>(requestBody);

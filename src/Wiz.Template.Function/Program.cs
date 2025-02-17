@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Hosting;
 using System.Diagnostics.CodeAnalysis;
-using Wizco.Common.Application;
 using Wizco.Common.Functions;
 using Wiz.Template.Infra;
+using Wiz.Template.Application;
 
 namespace Wiz.PushNotification.Function;
 
@@ -14,7 +14,7 @@ public class Program
         var host = BaseProgram.ConfigureMiddleware()
          .ConfigureServices((c, s) =>
          {
-             s.AddApplication();
+             s.AddFunctionApplication();
              s.AddInfrastructure(c.Configuration);
          }).Build();
 

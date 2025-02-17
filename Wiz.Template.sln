@@ -16,6 +16,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{202782
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wiz.Template.Application", "src\Wiz.Template.Application\Wiz.Template.Application.csproj", "{E4697A19-C4E6-41C2-8E20-ACF80CC0A898}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wiz.Template.UnitTests", "test\Wiz.Template.UnitTests\Wiz.Template.UnitTests.csproj", "{45373B9C-C88F-4A06-9910-44F40F928B41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +38,10 @@ Global
 		{E4697A19-C4E6-41C2-8E20-ACF80CC0A898}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4697A19-C4E6-41C2-8E20-ACF80CC0A898}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4697A19-C4E6-41C2-8E20-ACF80CC0A898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45373B9C-C88F-4A06-9910-44F40F928B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45373B9C-C88F-4A06-9910-44F40F928B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45373B9C-C88F-4A06-9910-44F40F928B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45373B9C-C88F-4A06-9910-44F40F928B41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +50,7 @@ Global
 		{85273E11-4488-4962-9544-30636E2AA548} = {FBED0694-D07A-44A1-ABB6-79400859AA48}
 		{3CA39012-EF4C-4D31-B960-A33260416673} = {FBED0694-D07A-44A1-ABB6-79400859AA48}
 		{E4697A19-C4E6-41C2-8E20-ACF80CC0A898} = {FBED0694-D07A-44A1-ABB6-79400859AA48}
+		{45373B9C-C88F-4A06-9910-44F40F928B41} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B21F0CE8-1882-4FDD-AF8C-0B0655F3E9F0}
