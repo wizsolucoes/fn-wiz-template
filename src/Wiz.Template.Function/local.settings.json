@@ -1,13 +1,23 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "CONNECTION_STRING_STORAGE_AZURE",
-    "APPINSIGHTS_INSTRUMENTATIONKEY": "KEY_APPLICATION_INSIGHTS",
-    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-    "API:ViaCEP": "https://viacep.com.br/ws/",
-    "API:UrlTeste": "https://viacep.com.br/ws/",
-    "wiz:project:name": "template",
-    "wiz:sso:issuer": "https://para-alterar.azurewebsites.net",
-    "wiz:sso:audience": "https://para-alterar.azurewebsites.net/resources"
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "<APPINSIGHTS-CONNECTIONSTRING>",
+    "Connection": "<SERVICEBUS-CONNECTIONSTRING>",
+    "Topic": "<SERVICEBUS-TOPIC>",
+    "Subscription": "<SERVICEBUS-SUBSCRIPTION>",
+    "ConnectionStrings:AppConfig": "<APPCONFIG-CONNECTIONSTRING>",
+    "AppConfiguration:Prefix": "WX1:Function:*",
+    "AppConfiguration:Sentinel": "WX1:Function:Sentinel",
+    "AppConfiguration:CacheExpirationFromMinutes": 15,
+    "LogAnalyticsSettings:SharedKey": "<LOGANALYTICS-SHAREDKEY>",
+    "LogAnalyticsSettings:WorkspaceId": "<LOGANALYTICS-WORKSPACEID>",
+    "LogAnalyticsSettings:ApiVersion": "2016-04-01",
+    "LogAnalyticsSettings:BaseUrlPattern": "https://{0}.ods.opinsights.azure.com/api/logs?api-version={1}",
+    "LogAnalyticsSettings:ContentType": "application/json"
+  },
+  "Host": {
+    "LocalHttpPort": 21094
   }
 }
