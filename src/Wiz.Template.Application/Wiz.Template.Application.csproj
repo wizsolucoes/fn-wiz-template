@@ -7,6 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Wizco.Commons.Application" Version="1.0.7" />
+		<PackageReference Include="Wizco.Commons.Application" Version="1.0.8" />
 	</ItemGroup>
 </Project>
