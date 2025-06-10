@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Wiz.Dotnet.Template.Function</id>
-    <version>8.0.0.0</version>
+    <version>8.0.0.1</version>
     <description>
       Wiz DotNet Core Function Template
     </description>
